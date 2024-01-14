@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Github Pages
 on:
   push:
     branches:
@@ -6,6 +6,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+     permissions:
+      contents: write
+      concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -17,6 +21,7 @@ jobs:
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Default static site output dir for Vite
+      if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
