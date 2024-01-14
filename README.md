@@ -1,1 +1,1 @@
-# customizable-portfolio
+# React and Vite Customizable Template Portfolio
