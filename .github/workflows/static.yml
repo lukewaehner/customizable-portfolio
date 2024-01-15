@@ -2,26 +2,24 @@ name: Github Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main # Set a branch to deploy
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-     permissions:
-      contents: write
-      concurrency:
+    concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Install and Build
-      run: |
-        npm install
-        npm run build
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
