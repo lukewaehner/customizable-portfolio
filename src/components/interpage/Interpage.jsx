@@ -15,7 +15,7 @@ const Interpage = ({ type }) => {
   const xSun = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   const backgroundStyles = {
-    backgroundImage: type === "services" ? `url('/sunset.jpg')` : "none",
+    backgroundImage: type === "services" ? `url('sunset.jpg')` : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const Interpage = ({ type }) => {
   return (
     <div className="interpage" ref={ref} style={backgroundStyles}>
       {type !== "services" && (
-        <video src="/Sunapee_Video.mp4" autoPlay muted loop></video>
+        <video src="Sunapee_Video.mp4" autoPlay muted loop></video>
       )}
       <motion.h1 style={{ y: yText }}>
         {type === "services" ? "Who I am" : "What I'm Working On:"}
@@ -34,7 +34,7 @@ const Interpage = ({ type }) => {
         style={{
           x: xSkyline,
           backgroundImage:
-            type === "services" ? `url('/realisticcity.png')` : "none",
+            type === "services" ? `url('realisticcity.png')` : "none",
         }}
       ></motion.div>
       <motion.div
@@ -42,7 +42,7 @@ const Interpage = ({ type }) => {
         style={{
           x: xSun,
           y: ySun,
-          backgroundImage: type === "services" ? `url('/sun.png')` : "none",
+          backgroundImage: type === "services" ? `url('sun.png')` : "none",
         }}
       ></motion.div>
     </div>

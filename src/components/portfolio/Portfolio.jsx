@@ -6,25 +6,25 @@ const items = [
   {
     id: 1,
     title: "Stock Chart Clone",
-    img: "/StockChart.png",
+    img: "StockChart.png",
     desc: "A personalized stockchart with Stochastic oscillators to predict price movements",
   },
   {
     id: 2,
     title: "Business News Scraper",
-    img: "/NewsScraper.png",
+    img: "NewsScraper.png",
     desc: "A news scraper that pulls latest headlines for stocks from reputaible business news sources using python's request module, and beautiful soup",
   },
   {
     id: 3,
     title: "Rock Paper Scissors",
-    img: "/RPSScreenshot.png",
+    img: "RPSScreenshot.png",
     desc: "A rock paper scissors game built with HTML, CSS, and Javascript",
   },
   {
     id: 4,
     title: "Sketchboard",
-    img: "/Sketchbook.png",
+    img: "Sketchbook.png",
     desc: "An etch-a-sketch web app",
   },
 ];
