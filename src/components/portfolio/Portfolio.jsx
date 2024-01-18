@@ -5,27 +5,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Stock Chart Clone",
-    img: "StockChart.png",
-    desc: "A personalized stockchart with Stochastic oscillators to predict price movements",
+    title: "Lorem",
+    img: "https://thumbs.dreamstime.com/b/temporary-rubber-stamp-over-white-background-86664158.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 2,
-    title: "Business News Scraper",
-    img: "NewsScraper.png",
-    desc: "A news scraper that pulls latest headlines for stocks from reputaible business news sources using python's request module, and beautiful soup",
+    title: "Lorem",
+    img: "https://thumbs.dreamstime.com/b/temporary-rubber-stamp-over-white-background-86664158.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 3,
-    title: "Rock Paper Scissors",
-    img: "RPSScreenshot.png",
-    desc: "A rock paper scissors game built with HTML, CSS, and Javascript",
+    title: "Lorem",
+    img: "https://thumbs.dreamstime.com/b/temporary-rubber-stamp-over-white-background-86664158.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 4,
-    title: "Sketchboard",
-    img: "Sketchbook.png",
-    desc: "An etch-a-sketch web app",
+    title: "Lorem",
+    img: "https://thumbs.dreamstime.com/b/temporary-rubber-stamp-over-white-background-86664158.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
 
