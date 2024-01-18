@@ -51,7 +51,7 @@ const Hero = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Computer Engineer", "Software Developer"],
+      strings: ["Path One", "Path Two"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -82,7 +82,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>LUKE WAEHNER</motion.h2>
+          <motion.h2 variants={textVariants}>Your Name</motion.h2>
           <motion.h1 variants={textVariants}>
             Aspring...
             <br />

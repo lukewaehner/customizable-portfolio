@@ -14,7 +14,7 @@ const Videopage = () => {
 
   return (
     <div className="videopage" ref={ref}>
-      <video src="/Sunapee_Video.mp4" autoPlay muted loop></video>
+      <video src="Sunapee_Video.mp4" autoPlay muted loop></video>
       <motion.h1 style={{ y: yText }}>
         {" "}
         What I'm <br /> Working On!

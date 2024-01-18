@@ -16,13 +16,13 @@ const Navbar = () => {
           LJW
         </motion.span>
         <div className="social">
-          <a href="https://github.com/lukewaehner">
+          <a href="https://github.com/">
             <motion.img src="github.png" alt="" whileHover={{ scale: 1.2 }} />
           </a>
-          <a href="https://www.linkedin.com/in/lukewaehner">
+          <a href="https://www.linkedin.com/in/">
             <motion.img src="linkedin.svg" alt="" whileHover={{ scale: 1.2 }} />
           </a>
-          <a href="https://www.instagram.com/lukewaehner/">
+          <a href="https://www.instagram.com/">
             <motion.img
               src="instagram.png"
               alt=""
