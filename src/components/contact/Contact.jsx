@@ -29,10 +29,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ab6ei2v",
-        "template_xxsira7",
+        "serviceID", //put in your service ID here
+        "templateID", //put in your template ID here (if you create one)
         formRef.current,
-        "fkPWIsnjeRi3PaQpB"
+        "publicAPI" //replace with your public API key from email.js
       )
       .then(
         (result) => {
